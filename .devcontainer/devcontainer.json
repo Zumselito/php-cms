@@ -1,0 +1,17 @@
+{
+	"name": "PHP-CMS",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "cms",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"forwardPorts": [8080, 8075],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-vscode-remote.remote-wsl"
+			]
+		}
+	},
+	"postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html",
+	"postStartCommand": "service apache2 start"
+}
