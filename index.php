@@ -1,1 +1,5 @@
-<?php phpinfo() ?>
+<?php
+
+include('./includes/database.php');
+
+echo 'Hello World!' ?>
