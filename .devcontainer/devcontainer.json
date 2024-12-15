@@ -3,12 +3,13 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "cms",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"forwardPorts": [8080, 8075],
+	"forwardPorts": [8080, 3305],
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-azuretools.vscode-docker",
-				"ms-vscode-remote.remote-wsl"
+				"ms-vscode-remote.remote-wsl",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	},
